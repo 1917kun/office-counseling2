@@ -24,7 +24,8 @@
           :state="textstate"
         )
         br
-        b-button(type="submit" variant="primary") 上傳
+        div(fluid).d-flex.justify-content-center
+          b-button(type="submit" variant="primary") 上傳
       hr
       Photoswipe
         b-row

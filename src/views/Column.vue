@@ -9,7 +9,7 @@
     b-container.columns
       b-row
         b-col.columnhover(cols="12" sm="6" md="4"  v-for="(column,index) in columns" :key="index")
-          b-card(:img-src="column.src" overlay text-variant="white")
+          b-card.cc(:img-src="column.src" overlay text-variant="white")
             b-card-text.text
               div.texttop
                 span 傾心
@@ -67,7 +67,7 @@ export default {
     return {
       columns: [
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
+          src: '/img/column/1.jpg',
           title: '榮格心理學與藝術治療：平衡人生的光與影',
           num: '456',
           like: '4',
@@ -75,164 +75,115 @@ export default {
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/2.jpg',
+          title: '09/12~09/13 (進階班) 內在小孩自我療癒進階工作坊',
           num: '25',
           like: '3',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/3.jpg',
+          title: '09/17-10/29 自我心理學講堂進階六堂課',
           num: '887',
           like: '5',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/4.jpg',
+          title: '09/19-09/20 人我關係與情緒界線護衛二日工作坊',
           num: '471',
           like: '7',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/5.jpg',
+          title: '08/15-08/16 療癒職場傷害_重新站起來二日工作坊',
           num: '782',
           like: '41',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/6.jpg',
+          title: '08/29-08/30 親密關係中的安全感練習二日工作坊',
           num: '374',
           like: '52',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/7.jpg',
+          title: '08/29-08/30 親密關係中的安全感練習二日工作坊',
           num: '546',
           like: '13',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/8.jpg',
+          title: '誰沒有內心戲，談人際關係及親子溝通',
           num: '397',
           like: '45',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/9.jpg',
+          title: '《戀愛這種病：解讀自我與對方的人格，診斷愛情的現在與未來》',
           num: '985',
           like: '7',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/10.jpg',
+          title: '心理彈性工作坊：第一次學ACT就上手',
           num: '564',
           like: '35',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/11.jpg',
+          title: '練習不壓抑——傾聽自己內心聲音的第一堂課',
           num: '374',
           like: '23',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/12.jpg',
+          title: '以心理學為基礎的職場時間/能量管理技巧',
           num: '568',
           like: '46',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/13.jpg',
+          title: '找回心理界限，搞定情緒勒索',
           num: '255',
           like: '12',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/14.jpg',
+          title: '三個人的晚餐,談劈腿及外遇',
           num: '131',
           like: '19',
           leavemessage: '留言'
 
         },
         {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
+          src: '/img/column/15.jpg',
+          title: '「從童話《不來梅樂隊》看人生下半場」免費講座',
           num: '687',
           like: '42',
           leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '575',
-          like: '75',
-          leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '332',
-          like: '66',
-          leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '874',
-          like: '77',
-          leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '331',
-          like: '54',
-          leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '465',
-          like: '25',
-          leavemessage: '留言'
-
-        },
-        {
-          src: 'https://picsum.photos/1920/1920/?random=51',
-          title: '榮格心理學與藝術治療：平衡人生的光與影',
-          num: '321',
-          like: '22',
-          leavemessage: '留言'
-
         }
       ],
       footers: [

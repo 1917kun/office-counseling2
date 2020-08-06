@@ -81,7 +81,7 @@ body {
 
 #home {
   height: calc(60vh - 90px);
-  background: url(/img/heart.jpg/) no-repeat fixed center/cover;
+  background: url(/img/home/heart.jpg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 576px) {
@@ -414,7 +414,7 @@ body {
 }
 
 #home .aboutimg {
-  background: url(/img/homecounseling2.jpg) no-repeat fixed center/cover;
+  background: url(/img/homecounseling.jpg) no-repeat fixed center/cover;
   height: 80vmin;
   max-height: 55vmax;
 }
@@ -616,7 +616,7 @@ body {
 
 @media (min-width: 1500px) {
   #home .carousel-item {
-    height: 35vh;
+    height: 40vh;
   }
 }
 
@@ -798,6 +798,7 @@ body {
 }
 
 #home .homenewstext {
+  height: 100%;
   color: #003448;
 }
 
@@ -874,6 +875,15 @@ body {
   width: 100%;
 }
 
+#home .homearticle .card > img {
+  width: 100%;
+  height: 60%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 #home .card-footer {
   background: white;
   display: -webkit-box;
@@ -894,7 +904,7 @@ body {
 
 #service {
   height: calc(55vh - 90px);
-  background: url(/img/eNplec2.jpg/) no-repeat fixed center/cover;
+  background: url(/img/service/eNplec2.jpg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -952,7 +962,7 @@ body {
 }
 
 #service .professioncol1 {
-  padding-top: 3rem;
+  padding-top: 1.5rem;
   padding-bottom: 1.25rem;
 }
 
@@ -1224,7 +1234,7 @@ body {
 
 #service .servicereservationimg {
   padding-left: 0;
-  background: url(/img/2223.jpg) no-repeat center/cover;
+  background: url(/img/service/2223.jpg) no-repeat center/cover;
   height: 50vmin;
   position: relative;
 }
@@ -1544,7 +1554,7 @@ body {
 
 #team {
   height: calc(35vh - 90px);
-  background: url(/img/team.svg) no-repeat fixed center/cover;
+  background: url(/img/team/team.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -1681,7 +1691,7 @@ body {
 
 #column {
   height: calc(35vh - 90px);
-  background: url(/img/column.svg) no-repeat fixed center/cover;
+  background: url(/img/column/column.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -1770,6 +1780,19 @@ body {
 
 #column .columnhover {
   padding: 1rem 1.25rem 2rem 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 576px) {
@@ -1814,6 +1837,19 @@ body {
 
 #column .card {
   overflow: hidden;
+  width: 335px;
+  height: 335px;
+}
+
+#column .card .card-img {
+  vertical-align: middle;
+  border-style: none;
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 #column .card-img-overlay {
@@ -1822,7 +1858,7 @@ body {
 
 #reserve {
   height: calc(35vh - 90px);
-  background: url(/img/reservation.svg) no-repeat fixed center/cover;
+  background: url(/img/reservation/reservation.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -2001,4 +2037,41 @@ body {
 
 #album h2:nth-of-type(1) {
   color: white;
+}
+
+#album .card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#album .card-body .btn {
+  margin-top: 5px;
+}
+
+#album .card-body pre {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }

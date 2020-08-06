@@ -59,7 +59,7 @@
           div.mb-3
             span 請注意傾心的門診時間。
           div
-            img(src="https://picsum.photos/1920/1080/?random=66")
+            img(src="/img/time.jpg")
       //- footer-----------------------------------------------------------
     hr
     b-container.footer
@@ -206,7 +206,7 @@ export default {
   methods: {
     onSubmit (evt) {
       evt.preventDefault()
-      this.axios.post('http://localhost:3000/order', this.form)
+      this.axios.post(process.env.VUE_APP_APIURL + '/order', this.form)
         .then(res => {
           console.log(res.data.result)
         })

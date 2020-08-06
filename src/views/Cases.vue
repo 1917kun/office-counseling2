@@ -1,10 +1,10 @@
 <template lang="pug">
   #cases
-    b-container.mt-5(fluid).overflow-auto
+    b-container.mt-5(fluid).overflow-auto.p-1
       p.mt-3 目前頁面: {{ currentPage }}
       b-table#my-table(:items='items' :per-page='perPage' :current-page='currentPage' small :fields="fields")
         template(v-slot:row-details="row")
-          | {{ row.item.worry }}
+          | {{ row.item.story }}
         template(v-slot:cell(worry)="row")
           b-button(@click="row.toggleDetails") 詳細資料
       b-pagination(v-model='currentPage' :total-rows='rows' :per-page='perPage' aria-controls='my-table' pills align="center")
@@ -36,7 +36,7 @@ export default {
   },
   methods: {
     getData () {
-      this.axios.get('http://localhost:3000/order')
+      this.axios.get(process.env.VUE_APP_APIURL + '/order')
         .then(res => {
           this.items = res.data.result
         })

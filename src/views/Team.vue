@@ -9,7 +9,7 @@
       b-row.dean
         b-col.teammenber(cols="12").d-flex.flex-column.align-items-center
           div
-            img(src="https://picsum.photos/1920/1080/?random=50" width="256px" height="214px")
+            img(src="/img/team/9.jpg" width="256px" height="214px")
           span.pt-2 呂昆承
           span 院長
         vue-easy-lightbox(:visible='visible' :imgs='teams' :index='index' @hide='handleHide')

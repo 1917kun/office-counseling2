@@ -88,7 +88,7 @@ body {
   @include xl {
     height: calc(100vh - 90px);
   }
-  background: url(/img/heart.jpg/) no-repeat fixed center/cover;
+  background: url(/img/home/heart.jpg) no-repeat fixed center/cover;
   .box {
     align-items: center;
     @include md {
@@ -293,7 +293,7 @@ body {
     padding-top: 1rem;
   }
   .aboutimg {
-    background: url(/img/homecounseling2.jpg) no-repeat fixed center/cover;
+    background: url(/img/homecounseling.jpg) no-repeat fixed center/cover;
     height: 80vmin;
     max-height: 55vmax;
   }
@@ -423,7 +423,7 @@ body {
       height: 30vh;
     }
     @include xxl{
-      height: 35vh;
+      height: 40vh;
     }
     text-shadow: none;
     background: white !important;
@@ -542,6 +542,7 @@ body {
     object-position: center;
   }
   .homenewstext {
+    height: 100%;
     color: #003448;
     p {
       font-family: "Mulish", sans-serif;
@@ -601,6 +602,12 @@ body {
   // homearticle--------------------------------------------------------
   .homearticle {
     width: 100%;
+    .card > img{
+      width: 100%;
+      height: 60%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
   .card-footer {
     background: white;
@@ -626,7 +633,7 @@ body {
   @include xxl {
     height: calc(70vh - 90px);
   }
-  background: url(/img/eNplec2.jpg/) no-repeat fixed center/cover;
+  background: url(/img/service/eNplec2.jpg) no-repeat fixed center/cover;
   .img1 {
     max-width: 35%;
     object-fit: cover;
@@ -648,7 +655,7 @@ body {
   }
   .professioncol1 {
     @extend %professioncol;
-    padding-top: 3rem;
+    padding-top: 1.5rem;
     padding-bottom: 1.25rem;
     h1 {
       font-size: 38px;
@@ -861,7 +868,7 @@ body {
   }
   .servicereservationimg {
     padding-left: 0;
-    background: url(/img/2223.jpg) no-repeat center/cover;
+    background: url(/img/service/2223.jpg) no-repeat center/cover;
     height: 50vmin;
     position: relative;
     @include lg {
@@ -1082,7 +1089,7 @@ body {
   @include xxl {
     height: calc(45vh - 90px);
   }
-  background: url(/img/team.svg) no-repeat fixed center/cover;
+  background: url(/img/team/team.svg) no-repeat fixed center/cover;
   .teamtop {
     span:nth-child(1) {
       font-size: 18px;
@@ -1166,7 +1173,7 @@ body {
     height: calc(45vh - 90px);
     // background: #ef8c52;
   }
-  background: url(/img/column.svg) no-repeat fixed center/cover;
+  background: url(/img/column/column.svg) no-repeat fixed center/cover;
   .columntop {
     span:nth-child(1) {
       font-size: 18px;
@@ -1207,6 +1214,10 @@ body {
   }
   .columnhover {
     padding: 1rem 1.25rem 2rem 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     @include sm {
       padding: 4rem 1rem 1rem 1rem;
       font-size: 10px;
@@ -1234,6 +1245,16 @@ body {
   }
   .card {
     overflow: hidden;
+    width: 335px;
+    height: 335px;
+    .card-img{
+      vertical-align: middle;
+      border-style: none;
+      height: 100%;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
   }
   .card-img-overlay {
     background-color: rgba(0, 0, 0, 0.45);
@@ -1250,7 +1271,7 @@ body {
   @include xxl {
     height: calc(45vh - 90px);
   }
-  background: url(/img/reservation.svg) no-repeat fixed center/cover;
+  background: url(/img/reservation/reservation.svg) no-repeat fixed center/cover;
   .teamtop {
     span:nth-child(1) {
       font-size: 18px;
@@ -1373,5 +1394,22 @@ body {
   background: black;
   h2:nth-of-type(1){
     color: white;
+  }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    .btn{
+      margin-top: 5px;
+    }
+    pre{
+      font-size: 1rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
