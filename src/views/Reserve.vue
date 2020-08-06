@@ -59,7 +59,7 @@
           div.mb-3
             span 請注意傾心的門診時間。
           div
-            img(:src="'./img/time.jpg'")
+            img(:src="'./img/reservation/time.jpg'")
       //- footer-----------------------------------------------------------
     hr
     b-container.footer
