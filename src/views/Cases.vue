@@ -4,7 +4,7 @@
       p.mt-3 目前頁面: {{ currentPage }}
       b-table#my-table(:items='items' :per-page='perPage' :current-page='currentPage' small :fields="fields")
         template(v-slot:row-details="row")
-          | {{ row.item.story }}
+          | {{ row.item.worry }}
         template(v-slot:cell(worry)="row")
           b-button(@click="row.toggleDetails") 詳細資料
       b-pagination(v-model='currentPage' :total-rows='rows' :per-page='perPage' aria-controls='my-table' pills align="center")
