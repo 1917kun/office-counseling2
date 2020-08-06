@@ -6,7 +6,7 @@
       b-container.d-flex.justify-content-center
         b-row.professionrow
           b-col.professioncol1(cols="12")
-            img.img1(:src="'./img/logo.jpg'")
+            img.img1(:src="'./img/logo.svg'")
             h1(:style="{color:'#a9a9a9'}") 傾心的專業協助
             p.text-left 一般人進入諮商診所後往往因緊張而不知道該如何開口尋求幫助,本診所將會由醫師或是心理師,為您進行第一次會談評估,再建議最適合您的諮商或治療方式。
             p.text-left 無論是進行藥物治療、心理會談治療、給兒童的團體訓練課程，我們都有完整的醫療團隊提供。
