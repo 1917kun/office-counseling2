@@ -1,5 +1,5 @@
 <template lang="pug">
-  #reserve
+  #reserve(:style="{background: 'url(./img/reservation/reservation.svg) no-repeat fixed center/cover'}")
     b-container.h-100.d-flex.justify-content-center.align-items-center
       b-row
         b-col.teamtop.d-flex.flex-column
@@ -59,7 +59,7 @@
           div.mb-3
             span 請注意傾心的門診時間。
           div
-            img(src="/img/time.jpg")
+            img(:src="'./img/time.jpg'")
       //- footer-----------------------------------------------------------
     hr
     b-container.footer
@@ -118,7 +118,7 @@ export default {
       ],
       footers: [
         {
-          logoimg: '/img/logo.svg',
+          logoimg: './img/logo.svg',
           imgsrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7080213475365!2d121.41715431500656!3d25.043980983967728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1591237554076!5m2!1szh-TW!2stw'
         }
       ]

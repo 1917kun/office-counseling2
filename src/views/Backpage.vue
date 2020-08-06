@@ -17,7 +17,7 @@
         <div class="header-sidebar text-center" slot="header">
           <vs-avatar
             size="120px"
-            src="/img/manager.jpg"/>
+            :src="'./img/manager.jpg'"/>
         </div>
         <div class="manage">
         <vs-sidebar-item to="/cases"  index="1" class="case">

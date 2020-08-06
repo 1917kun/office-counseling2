@@ -81,7 +81,6 @@ body {
 
 #home {
   height: calc(60vh - 90px);
-  background: url(/img/home/heart.jpg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 576px) {
@@ -414,7 +413,6 @@ body {
 }
 
 #home .aboutimg {
-  background: url(/img/homecounseling.jpg) no-repeat fixed center/cover;
   height: 80vmin;
   max-height: 55vmax;
 }
@@ -904,7 +902,6 @@ body {
 
 #service {
   height: calc(55vh - 90px);
-  background: url(/img/service/eNplec2.jpg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -1234,7 +1231,6 @@ body {
 
 #service .servicereservationimg {
   padding-left: 0;
-  background: url(/img/service/2223.jpg) no-repeat center/cover;
   height: 50vmin;
   position: relative;
 }
@@ -1554,7 +1550,6 @@ body {
 
 #team {
   height: calc(35vh - 90px);
-  background: url(/img/team/team.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -1691,7 +1686,6 @@ body {
 
 #column {
   height: calc(35vh - 90px);
-  background: url(/img/column/column.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {
@@ -1858,7 +1852,6 @@ body {
 
 #reserve {
   height: calc(35vh - 90px);
-  background: url(/img/reservation/reservation.svg) no-repeat fixed center/cover;
 }
 
 @media (min-width: 992px) {

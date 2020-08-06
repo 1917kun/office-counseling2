@@ -1,12 +1,12 @@
 <template lang="pug">
-  #service
+  #service(:style="{background: 'url(./img/service/eNplec2.jpg) no-repeat fixed center/cover'}")
     b-container.h-100
     //- Professional ---------------------------------------------
     b-container(fluid)(:style="{background:'#809ec925'}")
       b-container.d-flex.justify-content-center
         b-row.professionrow
           b-col.professioncol1(cols="12")
-            img.img1(src="/img/logo.699cef0b.svg")
+            img.img1(:src="'./img/logo.699cef0b.svg'")
             h1(:style="{color:'#a9a9a9'}") 傾心的專業協助
             p.text-left 一般人進入諮商診所後往往因緊張而不知道該如何開口尋求幫助,本診所將會由醫師或是心理師,為您進行第一次會談評估,再建議最適合您的諮商或治療方式。
             p.text-left 無論是進行藥物治療、心理會談治療、給兒童的團體訓練課程，我們都有完整的醫療團隊提供。
@@ -30,7 +30,7 @@
     //- reservation-------------------------------------------------------
     b-container.servicereservation(fluid).p-o
       b-row.servicereservationrow
-        b-col(cols="12" lg="6").servicereservationimg
+        b-col(cols="12" lg="6" :style="{background: 'url(./img/service/2223.jpg) no-repeat center/cover'}").servicereservationimg
         b-col(cols="12" lg="6").servicereservationtext
           div.ser
             div.servicereservationtextinner
@@ -46,7 +46,7 @@
                 li 4.為維護診所品質，還未到號前可以至我們的休憩區等待。
     //- Charges-----------------------------------------------------------------
     b-container#Charges(fluid).p-0.servicecharges
-      img.servicechargesimg(src="/img/service/charge.png")
+      img.servicechargesimg(:src="'./img/service/charge.png'")
     //- footer---------------------------------------------------
     b-container.footer
       b-row.footerrow
@@ -88,17 +88,17 @@ export default {
     return {
       services: [
         {
-          src: '/img/service/1.jpg',
+          src: './img/service/1.jpg',
           span: '評估機制',
           text: '提供完整的評估與治療，只要會談完第一次，後續會為您安排適切的協助模式。'
         },
         {
-          src: '/img/service/2.jpg',
+          src: './img/service/2.jpg',
           span: '藥物＆心理諮商',
           text: '提供完整的評估與治療，只要會談完第一次，後續會為您安排適切的協助模式。'
         },
         {
-          src: '/img/service/3.jpg',
+          src: './img/service/3.jpg',
           span: '團體課程',
           text: '提供完整的評估與治療，只要會談完第一次，後續會為您安排適切的協助模式。'
         }
@@ -149,7 +149,7 @@ export default {
       ],
       footers: [
         {
-          logoimg: '/img/logo.svg',
+          logoimg: './img/logo.svg',
           imgsrc: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7080213475365!2d121.41715431500656!3d25.043980983967728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1591237554076!5m2!1szh-TW!2stw'
         }
       ]
